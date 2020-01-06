@@ -20,3 +20,7 @@
   第一个错误是数组开小了，少数一个0
   第二个错误是在用前缀和优化找满足条件的最大值的时候
   在准备前缀和的过程中，将标记 max_prefix[unc_max[i] - 1] += 1; 写为了max_prefix[unc_max[i] - 1] = 1;
+
+2020/1/5 Codeforces Round #612 Problem B
+  在使用快速排序对long long (ll)进行排序的时候，cmp函数的返回值写作：*(ll*)a - *(ll*)b
+  但是cmp函数的返回值是int型的。两个ll相减的结果可能会爆数据范围。
