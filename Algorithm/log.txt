@@ -24,3 +24,7 @@
 2020/1/5 Codeforces Round #612 Problem B
   在使用快速排序对long long (ll)进行排序的时候，cmp函数的返回值写作：*(ll*)a - *(ll*)b
   但是cmp函数的返回值是int型的。两个ll相减的结果可能会爆数据范围。
+
+2020/1/31 Codeforces Round #508 (Div. 2) Problem C
+  输入数据中的范围全部在int以内，但是答案可能超出int的范围。
+  没有使用long long导致
