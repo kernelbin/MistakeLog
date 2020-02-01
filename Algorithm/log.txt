@@ -28,3 +28,8 @@
 2020/1/31 Codeforces Round #508 (Div. 2) Problem C
   输入数据中的范围全部在int以内，但是答案可能超出int的范围。
   没有使用long long导致
+
+2020/1/32 Educational Codeforces Round 49 (Rated for Div. 2) Problem B
+  又又又是没写long long
+  
+  
