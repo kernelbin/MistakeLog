@@ -32,4 +32,7 @@
 2020/1/32 Educational Codeforces Round 49 (Rated for Div. 2) Problem B
   又又又是没写long long
   
+2020/1/32 Educational Codeforces Round 49 (Rated for Div. 2) Problem C
+  每一组测试中有多组输入数据
+  有一个数组在循环的时候忘记清零memset0了
   
