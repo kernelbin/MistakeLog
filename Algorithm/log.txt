@@ -46,3 +46,11 @@
 
 2020/2/5  Codeforces Round #499 (Div. 2) Problem C
   在CF上不要用%lf来输出double，会boom
+  
+2020/2/9 Codeforces Round #460 (Div. 2) Problem C
+  在一个座位表里为k个人安排座位，（横着或竖着连在一起）
+  忘记考虑k=1的情况，此时横着和竖着的方案数重复考虑
+  
+2020/2/10 Codeforces Round Codeforces Round #456 (Div. 2) Problem A
+  发现会爆int精度
+  在把int改成long long的时候有一组写在下面的int变量漏掉了
