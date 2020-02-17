@@ -1,5 +1,12 @@
-2020 / 1 / 3   AwesomeDormitory_CoolQ_Server
+2020/1/3   AwesomeDormitory_CoolQ_Server
   瞎用API导致出错的典型案例
   试图用WSASocket并将后三个参数留空来代替socket函数（WSASocket函数的前三个参数名和socket一样）
   但是显然并没有得到预期的结果。send函数莫名其妙在recv函数执行的时候也一起给阻塞了。
   害得我调试半天
+
+2020/2/17 BOIT
+  没认真读文档，对函数不够了解就想着了解更复杂的内容导致的问题
+  我试图通过IOCP（完成端口，异步）操作一个Pipe
+  从Pipe里读取数据是用的 ReadFile/ReadFileEx 
+  ReadFile就是我要找的那个函数，但是我没细看文档就去看了ReadFileEx的文档。ReadFileEx也能实现异步，但就非常别扭
+  
