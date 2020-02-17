@@ -10,3 +10,8 @@
   从Pipe里读取数据是用的 ReadFile/ReadFileEx 
   ReadFile就是我要找的那个函数，但是我没细看文档就去看了ReadFileEx的文档。ReadFileEx也能实现异步，但就非常别扭
   
+2020/2/17 BOIT
+  CreateProcess系列的第二个参数，也就是命令行参数，不可以是一个常量
+  我也不知道为什么，但是MSDN上就是这么写的。传入一个常量比如CreateProcess(xxx,TEXT("cmd"),xxx...);确实会崩溃
+  记住就好了8，我已经第二次栽这里了。有空研究一下为什么
+  
