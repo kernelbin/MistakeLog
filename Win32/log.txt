@@ -15,3 +15,7 @@
   我也不知道为什么，但是MSDN上就是这么写的。传入一个常量比如CreateProcess(xxx,TEXT("cmd"),xxx...);确实会崩溃
   记住就好了8，我已经第二次栽这里了。有空研究一下为什么
   
+2020/2/27 BOIT
+  老是认为一个 BOOL 返回值函数返回 0 就是出错
+  但是对于异步IO，ReadFile返回 0 可能就是GetLastError = ERROR_IO_PENDING. 还是对API不熟悉，不看文档瞎写
+  
