@@ -19,3 +19,6 @@
   老是认为一个 BOOL 返回值函数返回 0 就是出错
   但是对于异步IO，ReadFile返回 0 可能就是GetLastError = ERROR_IO_PENDING. 还是对API不熟悉，不看文档瞎写
   
+2020/2/29 BOIT
+  HttpSendRequest 函数在 HttpOpenRequest 的 flag 没有指定 INTERNET_FLAG_RELOAD 的时候可能会从Cache里读取数据，进而不调用回调函数（异步情况下）
+  这里可以通过对 GetLastError 是不是 ERROR_IO_PEDNING 或者直接给 HttpOpenRequest 加上 INTERNET_FLAG_RELOAD 来解决
