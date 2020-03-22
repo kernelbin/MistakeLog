@@ -22,3 +22,7 @@
 2020/2/29 BOIT
   HttpSendRequest 函数在 HttpOpenRequest 的 flag 没有指定 INTERNET_FLAG_RELOAD 的时候可能会从Cache里读取数据，进而不调用回调函数（异步情况下）
   这里可以通过对 GetLastError 是不是 ERROR_IO_PEDNING 或者直接给 HttpOpenRequest 加上 INTERNET_FLAG_RELOAD 来解决
+
+2020/3/22 ReactOS
+  taskkill.h 整个文件最后漏了个换行，导致CI失败
+  始终补上换行
