@@ -54,3 +54,7 @@
 2020/2/10 Codeforces Round Codeforces Round #456 (Div. 2) Problem A
   发现会爆int精度
   在把int改成long long的时候有一组写在下面的int变量漏掉了
+
+2020/11/28 洛谷P1068 分数线划定
+  在计算分数线时候，要用第 m * 1.5 个人的分数作为划分分数线，于是写下 contestant[(int)floor(m * 1.5)].Score
+  但是忘记这个数组是从第零个元素开始存放的。应该减 1：contestant[(int)floor(m * 1.5) - 1].Score;
